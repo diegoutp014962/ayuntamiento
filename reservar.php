@@ -22,7 +22,7 @@
             text-align: center;
         }
         .container {
-            background-color: rgba(0, 0, 0, 0.69);
+            background-color: rgba(0, 0, 0, 0.81);
             padding: 20px;
             border-radius: 10px;
         }
@@ -51,7 +51,9 @@
 
 <div class="container">
     <h1>¡Tu libro está listo para ser leído!</h1>
-    <p>Has elegido el libro que deseas leer en nuestra biblioteca digital. Para acceder a él, es necesario realizar una reserva en el Ayuntamiento. Haz clic en el botón para completar el proceso.</p>
+    <p>¡GENIAL! Gracias por elegir un libro, eso  nutrira tu comocimiento.</p>
+    <p>Para poder leer el libro necesitas visitar el ayuntamiento de puebla para hacer el tramite corresponiente.</p>
+    <p>¡TE ESPERAMOS!.</p>
     <a href="reserva.php" class="button">Realizar Reserva</a>
 </div>
 
