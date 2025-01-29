@@ -1,5 +1,5 @@
 <?php
-// Página principal que redirige a reserva.php
+// Página principal que redirige a visiitanos.php
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -34,7 +34,7 @@
             margin: 20px 0;
         }
         .button {
-            background-color:rgb(102, 0, 0);
+            background-color: rgb(102, 0, 0);
             padding: 15px 25px;
             color: white;
             text-decoration: none;
@@ -43,7 +43,7 @@
             display: inline-block;
         }
         .button:hover {
-            background-color:rgb(102, 0, 0);
+            background-color: rgb(102, 0, 0);
         }
     </style>
 </head>
@@ -51,10 +51,10 @@
 
 <div class="container">
     <h1>¡Tu libro está listo para ser leído!</h1>
-    <p>¡GENIAL! Gracias por elegir un libro, eso  nutrira tu comocimiento.</p>
-    <p>Para poder leer el libro necesitas visitar el ayuntamiento de puebla para hacer el tramite corresponiente.</p>
+    <p>¡GENIAL! Gracias por elegir un libro, eso nutrirá tu conocimiento.</p>
+    <p>Para poder leer el libro necesitas visitar el ayuntamiento de Puebla para hacer el trámite correspondiente.</p>
     <p>¡TE ESPERAMOS!.</p>
-    <a href="reserva.php" class="button">Realizar Reserva</a>
+    <a href="visiitanos.php" class="button">Visítanos</a>
 </div>
 
 </body>
