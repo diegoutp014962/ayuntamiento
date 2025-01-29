@@ -3,40 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicación</title>
+    <title>Mapa con Google Maps API</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            background: url('imagenes/img11.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            height: 100vh;
+            flex-direction: column;
         }
+
+        #contenedor {
+            background: rgba(0, 0, 0, 0);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #leyenda {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0);
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
         #map {
-            height: 80%;
-            width: 80%;
+            height: 300px;
+            width: 300px;
+            border: 3px solid white;
+            border-radius: 10px;
+            margin-top: 10px;
         }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=initMap" async defer></script>
-    <script>
-        function initMap() {
-            var location = { lat: 19.0434, lng: -98.1981 }; // Coordenadas del Ayuntamiento de Puebla
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
 </head>
 <body>
 
-<div id="map"></div>
+    <div id="contenedor">
+        <div id="leyenda">📍 Visítanos en Av. 4 Ote. 11</div>
+        <div id="map"></div>
+    </div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: { lat: 19.045426289875948, lng: -98.19695694554018 }
+            });
+
+            var marcador = new google.maps.Marker({
+                position: { lat: 19.045426289875948, lng: -98.19695694554018 },
+                map: map,
+                title: "Nuestra Ubicación"
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2P57qtmLFKhS7njzF_eF5oh-XZy-Z35Q&callback=initMap"></script>
 
 </body>
 </html>
